@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
+
+body {
+    margin: 0;
+    background-color: #000000;
+    font-family: 'Gemunu Libre', sans-serif;
+
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+p {
+    font-size: 25px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    
+    
+}
+
+#nav_bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #2bff00;
+    gap: 0.3%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 2px solid #000000;
+}
+
+#logo {
+    margin: 0 auto;
+    height: 250px;
+}
+    
+
+.nav_sect {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    font-size: 200%;
+    text-align: center;
+    white-space: nowrap;
+    transition-duration: 100ms;
+    background-color: #2bff00;
+}
+
+.nav_sect:hover {
+    background-color: #ffd000;
+    box-shadow: 10px -10px 0px 1px,
+                9px -9px 0px 1px,
+                8px -8px 0px 1px,
+                7px -7px 0px 1px,
+                6px -6px 0px 1px,
+                5px -5px 0px 1px,
+                4px -4px 0px 1px,
+                3px -3px 0px 1px,
+                2px -2px 0px 1px,
+                1px -1px 0px 1px;
+    transform: translate(-10px, 10px);
+    transition-duration: 100ms;
+    cursor:pointer
+}
+
+.title_box {
+    width: fit-content;
+    height: fit-content;
+    background-color: #2bff00;
+    padding: 2%;
+    text-align: left;
+    margin-top: 10%;
+    margin-left: 1%;
+    border-radius: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#pres_img {
+    border-radius: 50px;
+    transition: transform 500ms cubic-bezier(.25,-1.54,.63,2.04);
+    flex: 2;
+}
+
+.pres_text {
+    flex: 4;
+}
+
+.jeu_img:hover {
+    transform: scale(1.2);
+    transition: transform 500ms cubic-bezier(.25,-1.54,.63,2.04)
+}
+
+
+#console {
+    font-family: Comic Sans Ms;
+    animation: color_text 1s ease;
+    animation-iteration-count: infinite;
+}
+
+#coin_count {
+    position: fixed;
+    color: white;
+    margin: 20px;
+    font-size: 150%;
+    z-index: 2;
+}
+
+#burger_magz {
+    margin-top: 50px;
+    width: 100%;
+}
+
+#easter_egg_burger {
+    grid-area: A;
+    width: 10px;
+    height: 10px;
+    background-color: aqua;
+}
+
+footer {
+    background-color: #00ccff;
+    margin-top: 50px;
+    padding: 10px;
+    display: flex;
+}
+
+.article_block {
+    color: white;
+    width: 85%;
+    height: fit-content;
+    padding: 30px;
+    background-color: #2bff00;
+    margin: 10px;
+    display: grid;
+    grid-template-areas:
+    "A B D"
+    "A C C";
+    flex-direction: row-reverse;
+    border-radius: 40px;
+    gap: 8px;
+    grid-template-columns: min-content auto min-content; 
+    grid-template-rows: max-content max-content max-content;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+}
+.article_desc, .article_title, .article_buy{
+    border-radius: 10px;
+    background-color: #027d9c;
+}
+
+.article_desc {
+    padding: 10px;
+    font-size: 25px;
+    grid-area: C;
+    
+    width: fit-content;
+    height: fit-content;
+}
+
+.article_price {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    background-color: #027d9c;
+    display: block;
+    font-size: 30px;
+    border-bottom-right-radius: 25px;
+    grid-area: A;
+}
+
+.img_article {
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    grid-area: A;
+}
+
+.article_title {
+    grid-area: B;
+    padding: 10px;
+    font-size: 50px;
+    width: fit-content;
+    height: fit-content;
+    min-width: fit-content;
+}
+
+.article_buy {
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 35px;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    border-radius: 100px;
+    transition: all 100ms cubic-bezier(.8,-0.01,.37,.96);
+}
+
+.article_buy:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #00586e;
+}
+
+@keyframes color_text {
+    0% {
+        color: red;
+    }
+
+    25% {
+        color: yellow;
+    }
+
+    50% {
+        color: green;
+    }
+
+    75% {
+        color: cyan;
+    }
+
+    100% {
+        color: blue;
+    }
+
+    125% {
+        color: magenta;
+    }
+}
+

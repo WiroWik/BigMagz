@@ -1,0 +1,12 @@
+[
+    {
+        "nom" : "table",
+        "prix" : "30",
+        "reference" : "A1"
+    },
+    {
+        "nom" : "chaise",
+        "prix" : "15",
+        "reference" : "A2"
+    }
+]
